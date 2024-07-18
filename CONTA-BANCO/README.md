@@ -1,18 +1,33 @@
-## Getting Started
+# 🏦 Projeto Conta Bancária 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém o projeto **Conta Bancária**, desenvolvido como parte do curso de Java oferecido pela Digital Innovation One (DIO) em parceria com o **Santander Open Academy**. O objetivo deste projeto é praticar a leitura de dados via terminal e a formatação de mensagens em Java.
 
-## Folder Structure
+## 📄 Descrição do Projeto
 
-The workspace contains two folders by default, where:
+O projeto **Conta Bancária** permite a criação de uma conta bancária com os seguintes atributos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Número da Conta**: Inteiro (ex: 1021)
+- **Agência**: Texto (ex: 067-8)
+- **Nome do Cliente**: Texto (ex: MARIO ANDRADE)
+- **Saldo**: Decimal (ex: 237.48)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Funcionalidades
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Solicitação de dados do usuário via terminal.
+- Armazenamento dos dados da conta bancária.
+- Exibição de uma mensagem de boas-vindas formatada, simulando o envio de um e-mail ao cliente.
 
-## Dependency Management
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **Java**: Linguagem de programação utilizada para desenvolver o projeto.
+- **Scanner**: Classe da biblioteca padrão do Java utilizada para ler a entrada do usuário via terminal.
+
+## 📥 Como Executar
+
+1. Clone o repositório para o seu ambiente local:
+   ```bash
+   git clone https://github.com/GretzelKattia/dio_trilha_java_basico/tree/main/CONTA-BANCO
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd CONTA-BANCO
