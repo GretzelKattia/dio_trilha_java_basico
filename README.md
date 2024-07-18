@@ -6,7 +6,7 @@ Bem-vindo ao repositório do **Curso de Java** oferecido pela Digital Innovation
 
 Este repositório contém os mini projetos desenvolvidos durante o curso. Cada projeto é uma aplicação prática dos conceitos aprendidos. 
 
-### 📄 Conta Bancária
+### 💲Conta Bancária
 
 O projeto **Conta Bancária** permite a criação de uma conta bancária com os seguintes atributos:
 
