@@ -6,23 +6,23 @@ public class ContaBancaria {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Primeiro vamos digitar qual agencia ela vai pertencer (ex: 067-8)");
-        String agencia = scanner.nextLine();
+        System.out.println("Primeiro, vamos digitar qual agencia ela vai pertencer (ex: 067-8)");
+        String agencia = scanner.next();
 
-        System.out.println("Okay, agora digite qual o número da agência que vamos inserir ela? (ex: 1021)");
+        System.out.println("Okay, agora digite qual o número da agência que vamos inserir ela (ex: 1021)");
         int numeroAgencia = scanner.nextInt();
 
         System.out.println("Beleza, não esquece de colocar o nome do cliente, viu?");
-        String nomeCliente = scanner.nextLine();
+        String nomeCliente = scanner.next();
 
-        System.out.println("Agora só precisa adicionar o saldo da conta dela?");
+        System.out.println("Agora só precisa adicionar o saldo da conta da pessoa");
         double saldo = scanner.nextDouble();
 
-        System.out.println("Prontinho! Agora podemos enviar essa mensagem para o email dela");
+        System.out.println("Prontinho! Agora podemos enviar essa mensagem para o email de " + nomeCliente);
 
         // Exibir a mensagem final formatada como um e-mail
         System.out.println("\n==============================");
-        System.out.println("Assunto: Bem-vindo ao Banco Larara!");
+        System.out.println("Assunto: Bem-vindo ao Banco Larapa!");
         System.out.println("==============================\n");
 
         String mensagem = String.format("Olá %s,\n\nObrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo de R$%.2f já está disponível para saque.\n\n", nomeCliente, agencia, numeroAgencia, saldo);
