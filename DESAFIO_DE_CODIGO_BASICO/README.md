@@ -1,24 +1,46 @@
-# Curso de Java - DIO & Santander Open Academy 🚀
+# Desafio de Código em Java 🚀
 
-Bem-vindo ao repositório do **Curso de Java** oferecido pela Digital Innovation One (DIO) em parceria com o **Santander Open Academy**! Este curso é projetado para fornecer uma base sólida em Java, uma das linguagens de programação mais populares e versáteis do mundo.
+## Objetivo
+Este repositório contém a solução para um desafio de código em Java, focado na prática de condições, loops e exceções.
 
-## 🛠️ Mini Projetos
+## Funcionalidades
+- **Condições**: Implementação de estruturas condicionais (`if`, `else if`, `else`, `switch`).
+- **Loops**: Utilização de diferentes tipos de loops (`for`, `while`, `do-while`).
+- **Exceções**: Tratamento de exceções utilizando `try`, `catch`, `finally`, e criação de exceções personalizadas.
 
-Este repositório contém os mini projetos desenvolvidos durante o curso. Cada projeto é uma aplicação prática dos conceitos aprendidos. 
+## Estrutura do Projeto
+- **ControleSimplesDeSaques.java**: Classe responsável por gerenciar saques simples em uma conta bancária, tendo um limite diario de saque implementado.
+- **SimulacaoBancaria.java**: Classe principal que simula operações bancárias, integrando as funcionalidades de saque, depósito e verificação de saldo.
+- **VerificacaoChequeEspecial.java**: Classe que verifica se a conta está utilizando cheque especial quando realiza o saque.
+- **VerificadorElegibilidadeConta.java**: Classe que verifica a elegibilidade de uma pessoa criar uma conta.
+- **VerificadorNumeroConta.java**: Classe que valida o número da conta bancária, garantindo que siga um formato específico e seja único.
 
-### 💲Conta Bancária
+## Como Executar
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/GretzelKattia/dio_trilha_java_basico.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd DESAFIO_DE_CODIGO_BASICO
+    ```
+3. Compile e execute os arquivos `.java`:
+    ```bash
+    javac ControleSimplesDeSaques.java
+    java ControleSimplesDeSaques
 
-O projeto **Conta Bancária** permite a criação de uma conta bancária com os seguintes atributos:
+    javac SimulacaoBancaria.java
+    java SimulacaoBancaria
 
-- **Número da Conta**: Inteiro (ex: 1021)
-- **Agência**: Texto (ex: 067-8)
-- **Nome do Cliente**: Texto (ex: MARIO ANDRADE)
-- **Saldo**: Decimal (ex: 237.48)
+    javac VerificacaoChequeEspecial.java
+    java VerificacaoChequeEspecial
 
-  Se quiser ver mais [clique aqui](https://github.com/GretzelKattia/dio_trilha_java_basico/tree/main/CONTA-BANCO)
+    javac VerificadorElegibilidadeConta.java
+    java VerificadorElegibilidadeConta
 
-#### Como Executar
+    javac VerificadorNumeroConta.java
+    java VerificadorNumeroConta
+    ```
 
-1. Clone o repositório para o seu ambiente local:
-   ```bash
-   git clone https://github.com/GretzelKattia/dio_trilha_java_basico
+## Autor
+- Gretzel Kattia ✨
