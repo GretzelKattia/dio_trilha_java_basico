@@ -1,24 +1,62 @@
-# Curso de Java - DIO & Santander Open Academy 🚀
 
-Bem-vindo ao repositório do **Curso de Java** oferecido pela Digital Innovation One (DIO) em parceria com o **Santander Open Academy**! Este curso é projetado para fornecer uma base sólida em Java, uma das linguagens de programação mais populares e versáteis do mundo.
+# POO - Desafio 📚
 
-## 🛠️ Mini Projetos
+## Modelagem e Diagramação de um Componente iPhone 📱
 
-Este repositório contém os mini projetos desenvolvidos durante o curso. Cada projeto é uma aplicação prática dos conceitos aprendidos. 
+Este repositório contém a solução para o desafio proposto na trilha Java Básico da DIO. O desafio consistia em modelar e diagramar a representação UML do componente iPhone, abrangendo suas funcionalidades como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
 
-### 💲Conta Bancária
+### Funcionalidades Modeladas 🎵📞🌐
+1. **Reprodutor Musical**
+   - Métodos: `tocar()`, `pausar()`, `selecionarMusica(String musica)`
+2. **Aparelho Telefônico**
+   - Métodos: `ligar(String numero)`, `atender(String numero)`, `iniciarCorreioVoz(String mensagem, String destinatario)`
+3. **Navegador na Internet**
+   - Métodos: `exibirPagina(String url)`, `adicionarNovaAba(String url)`, `atualizarPagina()`
 
-O projeto **Conta Bancária** permite a criação de uma conta bancária com os seguintes atributos:
+## Diagrama UML (Mermaid) 🖥️
+- Utilize uma ferramenta UML: [Mermaid](https://mermaid.js.org/), uma alternativa open-source e compatível com arquivos Markdown como este.
 
-- **Número da Conta**: Inteiro (ex: 1021)
-- **Agência**: Texto (ex: 067-8)
-- **Nome do Cliente**: Texto (ex: MARIO ANDRADE)
-- **Saldo**: Decimal (ex: 237.48)
+```mermaid
 
-  Se quiser ver mais [clique aqui](https://github.com/GretzelKattia/dio_trilha_java_basico/tree/main/CONTA-BANCO)
+classDiagram
+    class ReprodutorMusical {
+        + tocar() void
+        + pausar() void
+        + selecionarMusica(String musica) void
+    }
 
-#### Como Executar
+    class AparelhoTelefonico {
+        + ligar(String numero) void
+        + atender(String numero) void
+        + iniciarCorreioVoz(String mensagem, String destinatario) void
+    }
 
-1. Clone o repositório para o seu ambiente local:
-   ```bash
-   git clone https://github.com/GretzelKattia/dio_trilha_java_basico
+    class NavegadorInternet {
+        + exibirPagina(String url) void
+        + adicionarNovaAba(String url) void
+        + atualizarPagina() void
+    }
+
+    class iPhone {
+        
+    }
+
+    class Teste {
+        + main (args: String[] ) void
+    }
+
+    ReprodutorMusical <-- iPhone
+    AparelhoTelefonico <-- iPhone
+    NavegadorInternet <-- iPhone
+    iPhone --> Teste
+
+```
+
+## Implementação em Java ☕
+As classes e interfaces foram implementadas em Java conforme o diagrama UML acima.
+
+## Instruções 📝
+1. Clone este repositório.
+2. Navegue até o diretório do projeto.
+3. Compile e execute os arquivos `.java` para testar as funcionalidades implementadas.
+
